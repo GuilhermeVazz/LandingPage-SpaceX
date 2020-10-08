@@ -4,11 +4,52 @@
 
 }
 
+a{
+    text-decoration: none;
+}
+
+#menuSpaceX{
+    width: 100%;
+    height: 40px;
+    background: black;
+}
+
+#menu ul{
+    margin-left: 3%;
+}
+#menu li{
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+    margin-left: 2%;
+    font-size: 18px;
+    
+    
+}
+
+#menu li:hover{
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: white; 
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+    font-size: 20px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: initial;
+}
+
 #lastMissions{
     margin-left: 23%;
     margin-top: 10%;
     width: 350px;
     height: 500px;
+    float: left;
 }
 
 #h3-Mission{
@@ -29,7 +70,7 @@
     border:1px solid rgb(138, 147, 156);
     border-radius: 2%;
     margin-top: 5%;
-    
+
 }
 
 .Lmission:hover{
@@ -37,16 +78,15 @@
     width:350px;
     height: 100px;
     background: white;
-    border:1px solid rgb(253, 40, 225);
+    border:1px solid rgb(138, 147, 156);
     border-radius: 2%;
     margin-top: 5%;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    box-shadow:
-    1px 1px #53a7ea,
-    2px 2px #53a7ea,
-    3px 3px #53a7ea;
+    -webkit-box-shadow: 0px 1px 43px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 43px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 43px -6px rgba(0,0,0,0.75);
 
     
 }
@@ -61,15 +101,109 @@
 
 .Lmission p{
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     margin-left:6px;
 }
 
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.Lmission i {
+    margin-top:10%;
+    margin-left: 74%;
+}
+
+#showMission{
+    position: absolute;
+    margin-left: 53%;
+    margin-top: 3%;
+    width: 500px;
+    height: 650px;
+    border:1px solid rgb(138, 147, 156);
+    border-radius: 2%;
+    text-align: center;
+    background-color: rgb(235, 231, 231);
+}
+#showMission img{
+    width: 500px;
+    height: 300px;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    
+}
+
+
+#showMission h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 6px;
+}
+
+#showMission p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 6px;
+}
+
+
+.btn {
+
+    margin-left: 35%;
+    margin-top: 2%;
+	line-height: 35px;
+	height: 35px;
+	text-align: center;
+    width: 150px;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-seeMore {
+	color: rgb(0, 0, 0);
+	transition: all 0.5s;
+	position: relative;	
+}
+.btn-seeMore span {
+	z-index: 2;	
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+.btn-seeMore::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(2, 2, 2, 0.5);
+	background-color: rgba(255,255,255,0.5);
+}
+.btn-seeMore::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.5s;
+	border: 1px solid rgba(2, 2, 2, 0.5);
+	background-color: rgba(255,255,255,0.5);
+}
+.btn-seeMore:hover::before {
+  transform: rotate(-45deg);
+  background-color: rgba(255,255,255,0);
+}
+.btn-seeMore:hover::after {
+  transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+span a{
+    text-decoration: none;
+    color: black;
+
 }
